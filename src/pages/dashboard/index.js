@@ -39,7 +39,6 @@ const Dashboard = () => {
           </Grid>
         </Grid>
         <DashboardTable />
-        <DashboardTable />
       </Container>
     </Layout>
   );

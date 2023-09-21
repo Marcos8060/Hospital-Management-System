@@ -5,7 +5,7 @@ import RightBar from "./RightBar";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex gap-4 h-screen overflow-hidden sm:p-4">
+    <div className="md:flex gap-4 h-screen overflow-hidden sm:p-4">
       <div className="w-52 border-2 border-gray-300 rounded-xl md:block hidden">
         <Sidebar />
       </div>

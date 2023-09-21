@@ -17,7 +17,7 @@ const Dashboard = () => {
               </div>
               <div className="text-center text-sm">
                 <p>Patients Waiting</p>
-                <p>3</p>
+                <p className="text-[#02273D]">3</p>
               </div>
             </section>
           </Grid>
@@ -28,7 +28,7 @@ const Dashboard = () => {
               </div>
               <div className="text-center text-sm">
                 <p>Doctors on duty</p>
-                <p>34</p>
+                <p className="text-[#02273D]">34</p>
               </div>
             </section>
           </Grid>
@@ -36,7 +36,7 @@ const Dashboard = () => {
             <section className="border-2 border-gray-300 rounded-xl px-4 py-3 h-20">
               <div className="text-center">
                 <p>Test Requests</p>
-                <p>34</p>
+                <p className="text-[#02273D]">34</p>
               </div>
             </section>
           </Grid>

@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@/components/Layout";
 import DashboardTable from "@/components/dashboard/dashboardTable";
 import { FaWheelchair } from "react-icons/fa";
-import { FaClockRotateLeft } from "react-icons/fa6";
+import { FaClockRotateLeft, FaCodePullRequest } from "react-icons/fa6";
 import { Container, Grid } from "@mui/material";
 
 const Dashboard = () => {
@@ -33,7 +33,10 @@ const Dashboard = () => {
             </section>
           </Grid>
           <Grid item md={4} xs={12}>
-            <section className="border-2 border-gray-300 rounded-xl px-4 py-3 h-20">
+            <section className="border-2 border-gray-300 rounded-xl px-4 py-3 h-20 flex items-center justify-center gap-4">
+              <div>
+                <FaCodePullRequest className="text-2xl" />
+              </div>
               <div className="text-center">
                 <p>Test Requests</p>
                 <p className="text-[#02273D]">34</p>

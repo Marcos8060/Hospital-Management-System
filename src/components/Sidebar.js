@@ -12,11 +12,11 @@ const Sidebar = () => {
 
   return (
     <>
-      <section className="bg-primary h-[94vh] overflow-y-auto p-4 flex flex-col justify-between">
+      <section className="bg-primary h-[94vh] overflow-y-auto px-4 flex flex-col justify-between">
         <div className="">
-          <img className="w-24" src="/images/logo.png" alt="" />
+          <img className="w-28 object-cover" src="/images/logo.png" alt="" />
         </div>
-        <ul className="space-y-4 my-4">
+        <ul className="space-y-2 mb-4">
           {menus.map((menu, index) => (
             <li key={index}>
               <>
@@ -37,7 +37,7 @@ const Sidebar = () => {
             </li>
           ))}
         </ul>
-        <div className="space-y-4 text-xs">
+        <div className="space-y-4 text-xs mb-4">
           <div className="flex items-center gap-2">
             <AiFillLock className="text-xl" />
             <p>Logout</p>

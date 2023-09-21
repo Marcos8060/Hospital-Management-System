@@ -35,14 +35,10 @@ const AddPatientModal = () => {
           !val || (val.toString().length >= 3 && val.toString().length <= 20)
       )
       .required("This field is required!"),
-    name: Yup.string()
-      .required("This field is required!"),
-    age: Yup.string()
-      .required("This field is required!"),
-    country: Yup.string()
-      .required("This field is required!"),
-    gender: Yup.string()
-      .required("This field is required!"),
+    name: Yup.string().required("This field is required!"),
+    age: Yup.string().required("This field is required!"),
+    country: Yup.string().required("This field is required!"),
+    gender: Yup.string().required("This field is required!"),
   });
 
   const handleCreatePatient = async (formValue, helpers) => {
@@ -60,13 +56,13 @@ const AddPatientModal = () => {
     <section>
       <button
         onClick={handleClickOpen}
-        className="bg-[#02273D] text-white rounded px-2 py-1 text-sm shadow-2xl"
+        className="bg-[#02273D] text-white rounded px-2 py-2 text-sm shadow-2xl"
       >
         Add Patient
       </button>
       <Dialog
         fullWidth
-        maxWidth="sm"
+        maxWidth="xs"
         open={open}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
@@ -80,86 +76,83 @@ const AddPatientModal = () => {
             onSubmit={handleCreatePatient}
           >
             <Form>
-              <DialogContent>
-                <section className="flex gap-4">
-                  <article className="space-y-2">
-                    <div>
-                      <Field
-                        className="block border-2 border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
-                        type="text"
-                        placeholder="Id number"
-                        name="id_number"
-                      />
-                      <ErrorMessage
-                        name="id_number"
-                        component="div"
-                        className="text-red-600 text-xs"
-                      />
-                    </div>
-                    <div>
-                      <Field
-                        className="block border-2 border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
-                        type="text"
-                        placeholder="Name"
-                        name="name"
-                      />
-                      <ErrorMessage
-                        name="name"
-                        component="div"
-                        className="text-red-600 text-xs"
-                      />
-                    </div>
-                    <div>
-                      <Field
-                        className="block border-2 border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
-                        type="text"
-                        placeholder="Age"
-                        name="age"
-                      />
-                      <ErrorMessage
-                        name="age"
-                        component="div"
-                        className="text-red-600 text-xs"
-                      />
-                    </div>
-                  </article>
-                  <article className="space-y-2">
-                    <div>
-                      <Field
-                        className="block border-2 border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
-                        type="text"
-                        placeholder="Country"
-                        name="country"
-                      />
-                      <ErrorMessage
-                        name="country"
-                        component="div"
-                        className="text-red-600 text-xs"
-                      />
-                    </div>
-                    <div>
-                      <Field
-                        className="block border-2 border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
-                        type="text"
-                        placeholder="Gender"
-                        name="gender"
-                      />
-                      <ErrorMessage
-                        name="gender"
-                        component="div"
-                        className="text-red-600 text-xs"
-                      />
-                    </div>
-                    <div>
-                      <div className="flex justify-end">
-                        <button type="submit" className="bg-[#02273D] px-4 py-3 w-full rounded text-white">
-                          Save
-                        </button>
-                      </div>
-                    </div>
-                  </article>
-                </section>
-              </DialogContent>
+              <section className="space-y-4">
+                <div>
+                  <Field
+                    className="block border border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
+                    type="text"
+                    placeholder="Id number"
+                    name="id_number"
+                  />
+                  <ErrorMessage
+                    name="id_number"
+                    component="div"
+                    className="text-red-600 text-xs"
+                  />
+                </div>
+                <div>
+                  <Field
+                    className="block border border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                  />
+                  <ErrorMessage
+                    name="name"
+                    component="div"
+                    className="text-red-600 text-xs"
+                  />
+                </div>
+                <div>
+                  <Field
+                    className="block border border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
+                    type="text"
+                    placeholder="Age"
+                    name="age"
+                  />
+                  <ErrorMessage
+                    name="age"
+                    component="div"
+                    className="text-red-600 text-xs"
+                  />
+                </div>
+                <div>
+                  <Field
+                    className="block border border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
+                    type="text"
+                    placeholder="Country"
+                    name="country"
+                  />
+                  <ErrorMessage
+                    name="country"
+                    component="div"
+                    className="text-red-600 text-xs"
+                  />
+                </div>
+                <div>
+                  <Field
+                    className="block border border-gray-400 rounded px-2 py-3 focus:outline-none w-full"
+                    type="text"
+                    placeholder="Gender"
+                    name="gender"
+                  />
+                  <ErrorMessage
+                    name="gender"
+                    component="div"
+                    className="text-red-600 text-xs"
+                  />
+                </div>
+                <div>
+                  <div className="flex justify-end">
+                    <button
+                      type="submit"
+                      className="bg-[#02273D] px-4 py-3 w-full rounded text-white"
+                    >
+                      Save
+                    </button>
+                  </div>
+                </div>
+              </section>
             </Form>
           </Formik>
         </DialogContent>

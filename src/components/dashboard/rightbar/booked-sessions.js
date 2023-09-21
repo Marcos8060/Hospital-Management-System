@@ -4,7 +4,7 @@ const BookedSessions = () => {
   return (
     <>
       <section className="space-y-1">
-        <div className="flex items-center justify-between border-2 border-gray-300 rounded-xl p-2">
+        <div className="flex items-center justify-between border border-gray-400 rounded-xl p-2">
           <div className="text-xs">
             <p>Japheth Mbone</p>
           </div>
@@ -12,7 +12,7 @@ const BookedSessions = () => {
             <p>12th July 2024</p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-2 border-gray-300 rounded-xl p-2">
+        <div className="flex items-center justify-between border border-gray-400 rounded-xl p-2">
           <div className="text-xs">
             <p>Japheth Mbone</p>
           </div>

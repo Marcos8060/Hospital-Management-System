@@ -6,7 +6,7 @@ import RightBar from "./RightBar";
 const Layout = ({ children }) => {
   return (
     <div className="md:flex gap-4 h-screen overflow-hidden sm:p-4">
-      <div className="w-52 border-2 border-gray-300 rounded-xl md:block hidden">
+      <div className="w-52 border-2 border-gray-400 rounded-xl md:block hidden">
         <Sidebar />
       </div>
 
@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         <Header />
         <div>{children}</div>
       </div>
-      <div className="w-64 md:block hidden">
+      <div className="w-72 md:block hidden">
         <RightBar />
       </div>
     </div>

@@ -6,7 +6,7 @@ const DataGrid = dynamic(() => import("devextreme-react/data-grid"), {
   ssr: false,
 });
 
-const DashboardTable = () => {
+const PatientDataGrid = () => {
   const [searchQuery, setSearchQuery] = React.useState("");
 
   const users = [
@@ -91,8 +91,7 @@ const DashboardTable = () => {
 
   return (
     <section>
-      <div className="flex items-center justify-between mb-2">
-        <h1 className="uppercase font-semibold">Patients</h1>
+      <div className="flex items-center justify-end my-4">
         <input
           className="border rounded border-gray-400 py-3 px-2 focus:outline-none"
           onChange={(e) => setSearchQuery(e.target.value)}
@@ -112,6 +111,7 @@ const DashboardTable = () => {
         wordWrapEnabled={true}
         allowPaging={true}
         // height={"60vh"}
+        className="shadow"
       >
         <Pager
           visible={true}
@@ -137,4 +137,4 @@ const DashboardTable = () => {
   );
 };
 
-export default DashboardTable;
+export default PatientDataGrid;

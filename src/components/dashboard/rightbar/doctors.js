@@ -3,11 +3,11 @@ import React from 'react'
 const Doctors = () => {
   return (
     <section className='space-y-1'>
-        <div className="flex items-center justify-between border-2 border-gray-300 rounded-xl p-2">
+        <div className="flex items-center justify-between border border-gray-400 rounded-xl p-2">
           <div className="flex gap-2 items-center">
             <img
               className="w-8 h-8 rounded-full object-cover"
-              src="/images/doc.jpg"
+              src="/images/doc2.jpg"
               alt=""
             />
             <div className="text-xs">
@@ -19,15 +19,15 @@ const Doctors = () => {
             <p>On Duty</p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-2 border-gray-300 rounded-xl p-2">
+        <div className="flex items-center justify-between border border-gray-400 rounded-xl p-2">
           <div className="flex gap-2 items-center">
             <img
               className="w-8 h-8 rounded-full object-cover"
-              src="/images/doc.jpg"
+              src="/images/doc3.jpg"
               alt=""
             />
             <div className="text-xs">
-              <p>Dr. Patrick</p>
+              <p>Dr. Jairus</p>
               <p>Surgeon</p>
             </div>
           </div>

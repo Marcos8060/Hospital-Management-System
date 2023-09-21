@@ -24,10 +24,10 @@ const Header = () => {
               <div className="md:block hidden">
                 <AddPatientModal />
               </div>
-              <button className="md:block hidden border-2 border-gray-300 rounded px-2 py-1 text-sm">
+              <button className="md:block hidden border-2 border-gray-300 rounded px-2 py-2 text-sm">
                 Refer Patient
               </button>
-              <button className="md:block hidden border-2 border-gray-300 rounded px-2 py-1 text-sm">
+              <button className="md:block hidden border-2 border-gray-300 rounded px-2 py-2 text-sm">
                 View Referrals
               </button>
             </div>

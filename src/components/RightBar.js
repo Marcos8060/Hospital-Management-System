@@ -9,7 +9,7 @@ const RightBar = () => {
     <>
       <section className="h-[94vh] overflow-auto hide-scrollbar px-2">
         <TopSection />
-        <section className="space-y-1 mb-2">
+        <section className="space-y-1 my-4">
           <div className="flex items-center justify-between">
             <h1 className="uppercase text-xs font-semibold">Doctors</h1>
             <h1 className="text-sm">See All</h1>

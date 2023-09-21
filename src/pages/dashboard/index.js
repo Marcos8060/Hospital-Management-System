@@ -34,7 +34,10 @@ const Dashboard = () => {
           </Grid>
           <Grid item md={4} xs={12}>
             <section className="border-2 border-gray-300 rounded-xl px-4 py-3 h-20">
-              <p>Test Requests</p>
+              <div className="text-center">
+                <p>Test Requests</p>
+                <p>34</p>
+              </div>
             </section>
           </Grid>
         </Grid>

@@ -24,3 +24,6 @@
 .hideMiddleSectionScrollbar::-webkit-scrollbar{
   display: none;
 }
+.custom-calendar{
+  border: none;
+}

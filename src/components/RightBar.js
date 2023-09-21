@@ -1,8 +1,8 @@
 import React from "react";
 import Doctors from "./dashboard/rightbar/doctors";
 import BookedSessions from "./dashboard/rightbar/booked-sessions";
-import Calender from "./dashboard/rightbar/calender";
 import TopSection from "./dashboard/rightbar/top-section";
+import CalenderDate from "./dashboard/rightbar/calender";
 
 const RightBar = () => {
   return (
@@ -26,7 +26,7 @@ const RightBar = () => {
           <BookedSessions />
           <BookedSessions />
         </section>
-        <Calender />
+        <CalenderDate />
       </section>
     </>
   );

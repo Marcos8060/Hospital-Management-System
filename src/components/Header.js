@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <section className="sticky top-0 z-50 p-2 bg-white md:bg-opacity-30 md:backdrop-filter md:backdrop-blur-lg">
+      <section className="sticky top-0 z-50 p-2 bg-white md:bg-opacity-30 md:backdrop-filter mb-4 md:backdrop-blur-lg">
         <Container maxWidth="xl">
           <section className="flex items-center justify-between gap-4">
             <div className="md:hidden block">

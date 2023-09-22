@@ -12,7 +12,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <section className="bg-primary h-[94vh] overflow-y-auto px-4 flex flex-col justify-between">
+      <section className="bg-primary overflow-y-auto px-4 flex gap-4 flex-col">
         <div className="">
           <img className="w-28 object-cover" src="/images/logo.png" alt="" />
         </div>

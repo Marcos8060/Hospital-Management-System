@@ -22,7 +22,7 @@ const Sidebar = () => {
               <>
                 <Link
                   href={menu.href}
-                  className={`flex items-center justify-between py-2 px-2 cursor-pointer ${
+                  className={`flex items-center text-sm justify-between py-2 px-2 cursor-pointer ${
                     currentPath === menu.href
                       ? "text-[#02787B] font-semibold"
                       : ""
@@ -37,7 +37,7 @@ const Sidebar = () => {
             </li>
           ))}
         </ul>
-        <div className="space-y-4 text-xs mb-4">
+        <div style={{fontSize:'10px'}} className="space-y-4 mb-4">
           <div className="flex items-center gap-2">
             <AiFillLock className="text-xl" />
             <p>Logout</p>

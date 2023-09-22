@@ -46,6 +46,26 @@ export const menus = [
     href: "/dashboard/pharmacy",
     icon: <MdLocalPharmacy className="text-2xl" />,
   },
+  {
+    label: "Phamarcy",
+    href: "/dashboard/pharmacy",
+    icon: <MdLocalPharmacy className="text-2xl" />,
+  },
+  {
+    label: "Phamarcy",
+    href: "/dashboard/pharmacy",
+    icon: <MdLocalPharmacy className="text-2xl" />,
+  },
+  {
+    label: "Phamarcy",
+    href: "/dashboard/pharmacy",
+    icon: <MdLocalPharmacy className="text-2xl" />,
+  },
+  {
+    label: "Phamarcy",
+    href: "/dashboard/pharmacy",
+    icon: <MdLocalPharmacy className="text-2xl" />,
+  },
 ];
 
 

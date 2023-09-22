@@ -12,11 +12,11 @@ const Sidebar = () => {
 
   return (
     <>
-      <section className="bg-primary h-[94vh] px-4 flex gap-4 flex-col overflow-y-auto">
-        <div className="">
-          <img className="w-28 object-cover" src="/images/logo.png" alt="" />
+      <section className="bg-primary h-[94vh] px-4 py-1 flex gap-4 flex-col ">
+        <div className="h-20 flex items-center justify-center">
+          <img className="w-24 object-cover" src="/images/logo1.png" alt="" />
         </div>
-        <ul className="space-y-4 mb-4 ">
+        <ul className="space-y-4 mb-4 overflow-y-auto">
           {menus.map((menu, index) => (
             <li key={index}>
               <>
